@@ -1,0 +1,31 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+
+const EXPERIENCE = [
+  {
+    date: "Actualmente...",
+    title: "Bachillerato Tecnico",
+    company: "Cole",
+    description:
+      "Estoy iniciando mi camino en el mundo laboral, lleno de entusiasmo y ganas de aprender. Con una base sólida en desarrollo de software y frontend, estoy listo para enfrentar nuevos retos y crecer profesionalmente mientras contribuyo con mis conocimientos y habilidades a proyectos innovadores. 💻✨",
+    link: "",
+  },
+  {
+    date: "Septiembre 2024",
+    title: "Principal Frontend Engineer",
+    company: "San Salvador",
+    description:
+      "Soy un ingeniero en frontend en formación, apasionado por el desarrollo web y la creación de interfaces modernas e intuitivas. Actualmente, estoy completando mi bachillerato técnico en desarrollo de software, adquiriendo habilidades tanto en diseño como en programación para construir experiencias digitales únicas. 🚀",
+  },
+]
+---
+
+<ol class="relative border-s border-gray-200 ml-3">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="mb-10 ms-4">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
